@@ -1,0 +1,12 @@
+vm_name,target_sddc,target_ds,target_pool,target_folder,target_net,target_tag
+DR-DEMO-ActiveDirectory01,SDDC-Datacenter,WorkloadDatastore,Compute-ResourcePool,DR Automation Demo,sddc-cgw-network-1, Tagname
+DR-DEMO-ANSIBLE-01,SDDC-Datacenter,WorkloadDatastore,Compute-ResourcePool,DR Automation Demo,sddc-cgw-network-1, Tagname
+DR-DEMO-FileServer01,SDDC-Datacenter,WorkloadDatastore,Compute-ResourcePool,DR Automation Demo,sddc-cgw-network-1, Tagname
+DR-DEMO-Print02,SDDC-Datacenter,WorkloadDatastore,Compute-ResourcePool,DR Automation Demo,sddc-cgw-network-1, Tagname
+DR-DEMO-Server06,SDDC-Datacenter,WorkloadDatastore,Compute-ResourcePool,DR Automation Demo,sddc-cgw-network-1, Tagname
+DR-DEMO-Server07,SDDC-Datacenter,WorkloadDatastore,Compute-ResourcePool,DR Automation Demo,sddc-cgw-network-1, Tagname
+DR-DEMO-SQL01,SDDC-Datacenter,WorkloadDatastore,Compute-ResourcePool,DR Automation Demo,sddc-cgw-network-1, Tagname
+DR-DEMO-SQL02,SDDC-Datacenter,WorkloadDatastore,Compute-ResourcePool,DR Automation Demo,sddc-cgw-network-1, Tagname
+DR-DEMO-Webserver02,SDDC-Datacenter,WorkloadDatastore,Compute-ResourcePool,DR Automation Demo,sddc-cgw-network-1, Tagname
+100GB_Test_Base_v2,SDDC-Datacenter,WorkloadDatastore,Compute-ResourcePool,DR Automation Demo,sddc-cgw-network-1, Tagname
+CEOs_VM,SDDC-Datacenter,WorkloadDatastore,Compute-ResourcePool,DR Automation Demo,sddc-cgw-network-1, Tagname
