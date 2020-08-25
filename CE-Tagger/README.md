@@ -11,7 +11,7 @@ Module Summary:
 Lambda for tagging and untagging EBS and RDS snapshots
 
 ------------
-Installation:
+Setup:
 ------------
 
 Lamda requires (2) environmental variables. 
