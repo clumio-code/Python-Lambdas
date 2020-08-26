@@ -16,12 +16,14 @@ This Lamda app provides automated recovery of VMware Virtual Machines for the Cl
 Instructions:
 -------
 
-1. Download the dependencies, app, and vortex files
-2. Unzip the dependencies
-3. zip everthing up and load into a lambda
-4. Upload the customized recovery plan and credentials files to an S3 bucket (same region)
-5. Add the required Lambda Environemental Variables
-6. RUN!
+1. Download zipped files in this repo
+2. Unzip
+3. navigate to the unzupped directory and run "pip install -r requirements.txt -t ." to install the dependencies
+4. re-zip everthing up
+5. load the new zip file into a lambda
+6. Upload the customized recovery plan and credentials files to an S3 bucket (same region)
+7. Add the required Lambda Environemental Variables
+8. RUN!
 
 ------------
 Lambda Variables:
