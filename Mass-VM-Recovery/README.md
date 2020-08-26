@@ -43,7 +43,7 @@ This script requires the following environmental variables:
 
 4. csv
    - The name of the recovery plan CSV file in the bucket
-   -follow the formatting in the example recovery plan. Header line must be maintained.
+   - Follow the formatting in the example recovery plan. Header line must be maintained.
 
 ------------------------
 Lambda Permissions
