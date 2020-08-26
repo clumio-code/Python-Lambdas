@@ -14,7 +14,7 @@ Lambda for tagging and untagging EBS and RDS snapshots
 Setup:
 ------------
 
-Lamda requires (2) environmental variables. 
+Lambda requires (2) environmental variables. 
 
 1) geo
 
