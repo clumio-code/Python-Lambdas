@@ -20,7 +20,6 @@ Resources:
         - AmazonS3ReadOnlyAccess
       Environment:
         Variables:
-          base_url: https://us-east-1.api.clumio.com
           bucket: bucketname
           creds: jsonfilename
           csv: recoveryplanCSV
