@@ -22,13 +22,13 @@ Resources:
               - rds:RemoveTagsFromResource
             Resource: '*'
 
-  HelloWorldFunction:
+  RdsEbsTagger:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: snap_tagger.handler
+      Handler: app.handler
       Runtime: python3.8
       CodeUri: snap_tagger.zip
-      Description: 'Clumio fucntion for tagging EBS and RDS snapshot'
+      Description: 'Clumio function for tagging EBS and RDS snapshot'
       MemorySize: 1024
       Timeout: 600
       Policies: 
