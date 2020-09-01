@@ -38,5 +38,3 @@ Resources:
         Variables:
           action: tag
           geo: americas
-      Events:
-      Tags:
