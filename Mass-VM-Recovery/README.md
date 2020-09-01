@@ -31,17 +31,15 @@ Lambda Variables:
 
 This script requires the following environmental variables:
 
-1. base_url
-   - The URL for your Clumio managment plane. Example: https://us-east-1.api.clumio.com
 
-2. bucket
+1. bucket
    - The S3 bucket name containing the creds and recovery plan files
 
-3. creds
+2. creds
    - The name of the JSON file in the S3 bucket
    - Be sure to add your own API key + Source and Target vCenter information
 
-4. csv
+3. csv
    - The name of the recovery plan CSV file in the bucket
    - Follow the formatting in the example recovery plan. Header line must be maintained.
 
