@@ -1,0 +1,42 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Clumio tool for tagging and untagging EBS and RDS snapshots
+
+Resources:
+
+  MyManagedPolicy:
+    Type: AWS::IAM::ManagedPolicy
+    Properties:
+      ManagedPolicyName: ClumioTagger
+      PolicyDocument: 
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Action:
+              - ec2:CreateTags
+              - ec2:DeleteTags
+              - ec2:Describe*
+              - rds:Describe*
+              - rds:AddTagsToResource
+              - rds:RemoveTagsFromResource
+            Resource: '*'
+
+  HelloWorldFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: snap_tagger.handler
+      Runtime: python3.8
+      CodeUri: snap_tagger.zip
+      Description: 'Clumio fucntion for tagging EBS and RDS snapshot'
+      MemorySize: 1024
+      Timeout: 600
+      Policies: 
+        - AWSLambdaExecute
+        - !Ref MyManagedPolicy
+      Environment:
+        Variables:
+          action: tag
+          geo: americas
+      Events:
+      Tags:
