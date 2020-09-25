@@ -17,13 +17,15 @@ Instructions:
 -------
 
 1. Clone this repo
-2. Install the dependencies locally ("pip install -r requirements.txt -t ." to install the dependencies)
-3. zip everthing up
-4. Upload to S3 (same region as lambda deployment)
-5. Add your S3 zipfile URL to the yaml template
-6. Deploy the yaml template in cloud formations
-7. Add the required Lambda Environemental Variables
-8. RUN!
+2. Fill out your creds and recovery plan details
+3. Upload your creds and recoveyr plan to S3
+4. Install the dependencies locally ("pip install -r requirements.txt -t ." to install the dependencies)
+5. Zip up the dependencies with app and vortex
+6. Upload to S3 (same region as lambda deployment)
+7. Add your S3 zipfile URL to the yaml template
+8. Deploy the yaml template in cloud formations
+9. Add the required Lambda Environemental Variables
+10. RUN!
 
 ------------
 Lambda Variables:
