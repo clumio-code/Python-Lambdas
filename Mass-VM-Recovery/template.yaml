@@ -1,23 +1,20 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
-Description: >
-  Clumio tool for tagging and untagging EBS and RDS snapshots
+Description: 'Clumio Lambda for Executing Mass VM Recoveries'
 
 Resources:
-
-  
   RecoveryLambda:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: recovery.app.recover
+      Handler: app.recover
       Runtime: python3.8
-      CodeUri: recovery.zip
-      Description: 'Clumio function for tagging EBS and RDS snapshot'
+      CodeUri: S3 URL FOR YOUR ZIPFILE WITH DEPENDENCIES
+      Description: Clumio function for recovering virtual machines
       MemorySize: 1024
       Timeout: 600
-      Policies: 
-        - AWSLambdaExecute
-        - AmazonS3ReadOnlyAccess
+      Policies:
+      - AWSLambdaExecute
+      - AmazonS3ReadOnlyAccess
       Environment:
         Variables:
           bucket: bucketname
