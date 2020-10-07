@@ -10,7 +10,7 @@ Luke@clumio.com
 Summary:
 ---------
 
-This Lamda app provides automated recovery of VMware Virtual Machines for the Clumio platform 
+This Lambda app provides automated recovery of VMware Virtual Machines for the Clumio platform 
 
 -------
 Instructions:
@@ -18,7 +18,7 @@ Instructions:
 
 1. Clone this repo
 2. Fill out your creds and recovery plan details
-3. Upload your creds and recoveyr plan to S3
+3. Upload your creds and recovery plan to S3
 4. Install the dependencies locally ("pip install -r requirements.txt -t ." to install the dependencies)
 5. Zip up the dependencies with app and vortex
 6. Upload to S3 (same region as lambda deployment)
