@@ -8,7 +8,7 @@ Luke McCleary
 ---------
 Module Summary:
 ---------
-Lambda for tagging and untagging EBS and RDS snapshots. Ensure your Lambda role has right to tag and untag resources.
+Lambda for tagging and untagging EBS and RDS snapshots. Ensure your Lambda role has the rights to tag and untag resources.
 
 ------------
 Setup:
